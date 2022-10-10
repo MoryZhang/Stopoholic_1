@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecordActivity">
+
+    <TextView
+        android:id="@+id/textSelectType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Which Type You Drink?"
+        android:textSize="20dp" />
+
+    <Spinner
+        android:id="@+id/spinnerType"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textSelectType"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@android:drawable/btn_dropdown"
+        />
+
+    <TextView
+        android:id="@+id/textAlcoholContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerType"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="The Alcohol Content (%)"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/editTextAlcoholContent"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textAlcoholContent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/textVolume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextAlcoholContent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="How Much Did you Drink? (ml)"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/editTextVolume"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textVolume"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/editTextVolume"
+        android:layout_marginTop="30dp"
+        android:text="Add" />
+
+
+</RelativeLayout>

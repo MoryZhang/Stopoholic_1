@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Stopoholic</string>
+    <string name="record_button">Record</string>
+
+    <string-array name="types">
+        <item>Liquor</item>
+        <item>Beer</item>
+        <item>Wine</item>
+        <item>Cocktail</item>
+        <item>Other</item>
+    </string-array>
+</resources>
